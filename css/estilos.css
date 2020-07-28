@@ -142,7 +142,7 @@ ul {
 
 /* Masthead */
 .masthead {
-    background-color: #ccffff;
+    background-color: rgb(247, 247, 234);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -213,7 +213,7 @@ ul {
     position: absolute;
     width: 60%;
     height: 50px;
-    background-color: #ccffff;
+    background-color: rgb(247, 247, 234);
 }
 
 .triang1 {
