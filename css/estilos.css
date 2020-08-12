@@ -143,8 +143,27 @@ ul {
 /* Masthead */
 .masthead {
     background-color: rgb(247, 247, 234);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+}
+
+.col-1 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-2 {
+    width: 30%;
+}
+
+.col-1 p {
+    padding-left: 20px;
+    opacity: 0.4;
+}
+
+.col-1 img {
+    margin: auto;
+    max-width: 38%;
 }
 
 .text-masthead {
@@ -217,7 +236,7 @@ ul {
 }
 
 .triang1 {
-    top: -35px;
+    top: -32px;
     left:0;
     transform: rotate(-10deg) translateX(-10%);
 }
@@ -249,7 +268,7 @@ ul {
 
 .texto-casa p:last-child {
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
 }
 
 /* Redes */
@@ -350,6 +369,92 @@ ul {
     margin: 0;
 }
 
+/* SECCION GRADUADOS */
+.graduados-bg {
+    background-color: rgb(247, 247, 234);
+}
+
+.graduados {
+    margin: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.col-head {
+    width: 100%;
+}
+
+.col-head-img {
+    position: relative;
+}
+
+.col-head-img img {
+    max-width: 100%;
+}
+
+.col-head-img img:last-child {
+    max-width: 43%;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.col-title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #cc99ff;
+}
+
+.col-title-items {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.col-title-items h3 {
+    color: white;
+    text-transform: uppercase;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.col-title-items img {
+    position: absolute;
+    max-width: 15%;
+    right: 10px;
+    top: 15px;
+}
+
+.col-content {
+    width: 100%;
+}
+
+.col-content-title {
+    margin: 30px 0;
+}
+
+.col-content-footer {
+    text-align: end;
+    margin-bottom: 60px;
+}
+
+.col-content-footer a {
+    text-decoration: none;
+    color: #99cc99;
+    font-size: 1.2rem;
+}
+
+.col-content-footer i {
+    margin-left: 5px;
+}
+
+.col:nth-child(2) .col-title {
+    background-color: #9966ff !important;
+}
+
 /* Medias querys responsive */
 @media screen and (max-width:950px) {
     .menu-btn {
@@ -406,11 +511,34 @@ ul {
     .linea-link {
         display: none;
     }
+    .col-1 img {
+        max-width: 60%;
+    }
+    .casa {
+        width: 100%;
+    }
+    .icon-wtsp img {
+        margin-right: 10px;
+    }
+    .graduados {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width:750px) {
     .masthead {
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-1 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .col-1 img {
+        margin-top: 20px;
+    }
+    .col-2 {
+        width: 70%;
     }
 }
 
@@ -418,5 +546,8 @@ ul {
     .columns {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
+    }
+    .graduados {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
