@@ -154,6 +154,8 @@ ul {
 
 .col-2 {
     width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
 .col-1 p {
@@ -175,6 +177,7 @@ ul {
 }
 
 .btn-masthead {
+    margin: 20px;
     text-align: center;
 }
 
@@ -204,7 +207,9 @@ ul {
     width: 70%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
     position: relative;
     overflow: hidden;
 }
@@ -455,6 +460,84 @@ ul {
     background-color: #9966ff !important;
 }
 
+/* SECCION CONTACTO */
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario form {
+    width: 50%;
+}
+
+.form-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #9966ff;
+    color: white;
+}
+
+.form-title h4 {
+    margin-left: 15px;
+}
+
+.input-area {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.input-area input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+
+.input-area input:focus {
+    outline: none;
+}
+
+/* INSCRIPCION */
+.formulario-inscripcion {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.form-1, .form-2 {
+    width: 40%;
+}
+
+.input-title h4 {
+    margin: 0;
+    margin-top: 10px;
+    /* padding-left: 20px; */
+}
+
+.input-title p {
+    margin: 0;
+    padding-left: 0;
+}
+
+.input-check {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.input-check h5 {
+    margin: 0;
+    margin-left: 5px;
+}
+
+/* .form-2 .input-area .btn {
+    margin-left: auto;
+} */
+
 /* Medias querys responsive */
 @media screen and (max-width:950px) {
     .menu-btn {
@@ -532,13 +615,37 @@ ul {
     }
     .col-1 {
         width: 100%;
-        margin-bottom: 50px;
     }
     .col-1 img {
         margin-top: 20px;
+        max-width: 90%;
     }
     .col-2 {
         width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .icon-wtsp {
+        order: 1;
+    }
+    .text-masthead {
+        order: 2;
+    }
+    .btn-masthead {
+        order: 3;
+    }
+    .casa {
+        margin-top: 30px;
+        order: 4;
+    }
+    .texto-casa p:last-child {
+        margin-bottom: 40px;
+    }
+    .column img {
+        max-width: 90%;
+    }
+    .formulario form {
+        width: 90%;
     }
 }
 
@@ -549,5 +656,12 @@ ul {
     }
     .graduados {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .formulario-inscripcion {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-1, .form-2 {
+        width: 80%;
     }
 }
