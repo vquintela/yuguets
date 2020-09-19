@@ -468,7 +468,7 @@ ul {
 
 .btn-youtube {
     width: 100%;
-    height: 80px;
+    height: 100px;
     background-color: #ffffff;
     margin-top: 30px;
     display: flex;
@@ -485,7 +485,7 @@ ul {
 }
 
 .btn-youtube img {
-    max-width: 20%;
+    max-width: 15%;
 }
 
 .detalle-youtube {
