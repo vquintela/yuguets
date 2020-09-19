@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="img/iso.png" type="imagenes" rel="shortcurt icon"/>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
@@ -67,24 +68,22 @@
                         <h4>Formulario de CONTACTO</h4>
                     </div>
                     <div class="input-area">
-                        <!-- <h6>Nombre y Apellido</h6> -->
                         <input type="text" id="nombre" class="input-text" placeholder="Nombre y Apellido">
+                        <span id="errorNombre" class="text-danger"></span>
                     </div>
                     <div class="input-area">
-                        <!-- <h5>Email</h5> -->
                         <input type="text" id="email" class="input-text" placeholder="Email">
+                        <span id="errorEmail" class="text-danger"></span>
                     </div>
                     <div class="input-area">
-                        <!-- <h5>Teléfono (opcional)</h5> -->
                         <input type="text" id="telefono" class="input-text" placeholder="Telefono">
+                        <span id="errorTelefono" class="text-danger"></span>
                     </div>
                     <div class="input-area">
-                        <!-- <h5>Mensaje</h5> -->
                         <input type="text" id="comentario" class="input-text" placeholder="Comentario"/>
+                        <span id="errorComentario" class="text-danger"></span>
                     </div>
-                    <div class="input-area">
-                        <but ton class="btn">Enviar</button>
-                    </div>
+                    <button class="btn contacto" id="btn-contacto">Enviar</button>
                 </form>
             </div>
         </div>
@@ -96,7 +95,7 @@
                 <a href="inscripcion.html" class="btn">Inscripción</a>
             </div>
             <div class="icon-wtsp">
-                <a href="#">
+                <a href="#" id="btn-ws">
                     <img src="img/iconwts.png" alt="">
                 </a>
             </div>
@@ -140,6 +139,7 @@
                 <div class="column-text">
                     <h4>SEDE - Riobamba 1059 4° Piso</h4>
                     <h4>Recoleta - CABA</h4>
+                    <h4>Buenos Aires - Argentina</h4>
                 </div>
             </div>
             <div class="filas-column">
@@ -161,6 +161,28 @@
     </div>
     <div class="legales">
         <h4>Derechos Reservados Yuguets</h4>
+    </div>
+     <!-- MODAL MENSAJE -->
+     <div id="lamascara" class="mascara">
+        <div class="contenido">
+            <div class="modal-content">
+                <div class="modal-title">
+                    <img src="img/iso.png" alt="logo">
+                    <h3>Consulta Enviada Correctamente</h3>
+                    <span class="cerrar" id="cerrarModal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <hr>
+                    <p>En breve nos comunicaremos con usted</p>
+                    <p>¡Muchas Gracias!</p>
+                </div>
+                <hr>
+                <div class="modal-footer">
+                    <h3>INSTITUTO YUGUETS</h3>
+                    <button type="button" id="aceptarEditarButton" class="btn-acept">Aceptar</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/index.js"></script>
 </body>

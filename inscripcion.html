@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="img/iso.png" type="imagenes" rel="shortcurt icon"/>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
@@ -96,54 +97,49 @@
                             <p>Puedes elegir mas de una</p>
                         </div>
                         <div class="input-check">
-                            <input type="checkbox" id="nombre" class="input-text">
+                            <input type="checkbox" class="input-text carrera" value="Técnico Ludotecario y Diseñador en juegos y juguetes">
                             <h5>Técnico Ludotecario y Diseñador en juegos y juguetes</h5>
                         </div>
                         <div class="input-check">
-                            <input type="checkbox" id="nombre" class="input-text">
+                            <input type="checkbox" class="input-text carrera" value="Posgrado Ludotecario Educativo">
                             <h5>Posgrado Ludotecario Educativo</h5>
                         </div>
                         <div class="input-check">
-                            <input type="checkbox" id="nombre" class="input-text">
+                            <input type="checkbox" class="input-text carrera" value="Cursos, Talleres o Seminarios">
                             <h5>Cursos, Talleres o Seminarios</h5>
                         </div>
                         <div class="input-check">
-                            <input type="checkbox" id="nombre" class="input-text">
+                            <input type="checkbox" class="input-text carrera" value="Otros">
                             <h5>Otros</h5>
                         </div>
-                        <!-- <div class="form-title">
-                            <h4>Estudios Académicos</h4>
-                        </div> -->
                         <div class="input-title">
                             <h4>Estudios Cursados</h4>
                             <p>Especificar el titulo que posee. Puedes elegir mas de uno</p>
                         </div>
                         <div class="input-check">
-                            <input type="checkbox" id="nombre" class="input-text">
+                            <input type="checkbox" class="input-text" value="Secundario terminado">
                             <h5>Secundario terminado</h5>
                         </div>
                         <div class="input-check">
-                            <input type="checkbox" id="nombre" class="input-text">
+                            <input type="checkbox" class="input-text" value="Terciario en curso">
                             <h5>Terciario en curso</h5>
                         </div>
                         <div class="input-check">
-                            <input type="checkbox" id="nombre" class="input-text">
+                            <input type="checkbox" class="input-text" value="Terciario terminado">
                             <h5>Terciario terminado</h5>
                         </div>
                         <div class="input-check">
-                            <input type="checkbox" id="nombre" class="input-text">
+                            <input type="checkbox" class="input-text" value="Universitario en curso">
                             <h5>Universitario en curso</h5>
                         </div>
                         <div class="input-check">
-                            <input type="checkbox" id="nombre" class="input-text">
+                            <input type="checkbox" class="input-text" value="Universitario terminado">
                             <h5>Universitario terminado</h5>
                         </div>
                         <div class="input-area">
-                            <input type="text" id="comentario" class="input-text" placeholder="Titulos Obtenidos"/>
+                            <input type="text" id="tituloComent" class="input-text" placeholder="Titulos Obtenidos"/>
                         </div>
-                        <div class="input-area">
-                            <but ton class="btn">Enviar</button>
-                        </div>
+                        <button class="btn inscripcion" id="btn-contacto">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -156,7 +152,7 @@
                 <a href="inscripcion.html" class="btn">Inscripción</a>
             </div>
             <div class="icon-wtsp">
-                <a href="#">
+                <a href="#" id="btn-ws">
                     <img src="img/iconwts.png" alt="">
                 </a>
             </div>
@@ -200,6 +196,7 @@
                 <div class="column-text">
                     <h4>SEDE - Riobamba 1059 4° Piso</h4>
                     <h4>Recoleta - CABA</h4>
+                    <h4>Buenos Aires - Argentina</h4>
                 </div>
             </div>
             <div class="filas-column">
@@ -221,6 +218,28 @@
     </div>
     <div class="legales">
         <h4>Derechos Reservados Yuguets</h4>
+    </div>
+    <!-- MODAL MENSAJE -->
+    <div id="lamascara" class="mascara">
+        <div class="contenido">
+            <div class="modal-content">
+                <div class="modal-title">
+                    <img src="img/iso.png" alt="logo">
+                    <h3>Inscripción Enviada Correctamente</h3>
+                    <span class="cerrar" id="cerrarModal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <hr>
+                    <p>En breve nos comunicaremos con usted</p>
+                    <p>¡Muchas Gracias!</p>
+                </div>
+                <hr>
+                <div class="modal-footer">
+                    <h3>INSTITUTO YUGUETS</h3>
+                    <button type="button" id="aceptarEditarButton" class="btn-acept">Aceptar</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/index.js"></script>
 </body>
