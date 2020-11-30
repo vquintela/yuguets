@@ -1,0 +1,185 @@
+/* Masthead */
+.masthead {
+    background-color: rgb(247, 247, 234);
+    display: flex;
+}
+
+.col-1 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-1 p {
+    padding-left: 20px;
+    opacity: 0.4;
+}
+
+.col-1 img {
+    margin: auto;
+    max-width: 38%;
+}
+
+.text-masthead {
+    text-align: center;
+}
+
+.text-masthead h3 {
+    margin: 10px;
+}
+
+.btn-masthead {
+    margin: 20px;
+    text-align: center;
+}
+
+.btn {
+    color: white;
+    background-color: red;
+    padding: 7px 45px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-wtsp {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.icon-wtsp img {
+    margin-right: 90px;
+    width: 70px;
+}
+
+.casa {
+    background-color: white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.line1,
+.line2 {
+    top: 0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: red;
+}
+
+.line1 {
+    transform: rotate(10deg) translateX(49.5%);
+}
+
+.line2 {
+    transform: rotate(-10deg) translateX(-49.5%);
+}
+
+.triang1,
+.triang2 {
+    position: absolute;
+    width: 60%;
+    height: 50px;
+    background-color: rgb(247, 247, 234);
+}
+
+.triang1 {
+    top: -32px;
+    left:0;
+    transform: rotate(-10deg) translateX(-10%);
+}
+
+.triang2 {
+    top: -58px;
+    left:0;
+    transform: rotate(10deg) translateX(80%);
+}
+
+.texto-casa {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.texto-casa p:first-child {
+    margin-bottom: 40px;
+}
+
+.texto-casa h3,
+.texto-casa h1,
+.texto-casa h5 {
+    margin: 0;
+}
+
+.texto-casa p {
+    margin-bottom: 0;
+}
+
+.texto-casa p:last-child {
+    margin-top: 0;
+    margin-bottom: 120px;
+}
+
+@media screen and (max-width:950px) {
+    .col-1 img {
+        max-width: 60%;
+    }
+    .casa {
+        width: 100%;
+    }
+    .icon-wtsp img {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .masthead {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-1 {
+        width: 100%;
+    }
+    .col-1 img {
+        margin-top: 20px;
+        max-width: 90%;
+    }
+    .col-2 {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .icon-wtsp {
+        order: 1;
+    }
+    .text-masthead {
+        order: 2;
+    }
+    .btn-masthead {
+        order: 3;
+    }
+    .casa {
+        margin-top: 30px;
+        order: 4;
+    }
+    .texto-casa p:last-child {
+        margin-bottom: 40px;
+    }
+    .column img {
+        max-width: 90%;
+    }
+}

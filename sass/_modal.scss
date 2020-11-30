@@ -1,0 +1,81 @@
+/* MODAL */
+.mascara {
+    display: none; 
+    position: fixed; 
+    z-index: 10000000; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0,0,0,0.8); 
+}
+
+.contenido {
+    position: fixed;
+    left: 10vw;
+    right: 10vw;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: auto;
+    color: black;
+    animation: modal 1s;
+    top: 5vh;
+    max-width: 450px;
+}
+
+.modal-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.modal-title h3 {
+    margin-left: 15px;
+}
+
+.modal-title img {
+    width: 40px;
+}
+
+.modal-body p {
+    margin: 15px 0px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn-acept {
+    max-height: 50px;
+    color: white;
+    background-color: red;
+    padding: 7px 45px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.cerrar {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modal {
+    0% {
+        transform: translateY(-150%);
+    }
+}

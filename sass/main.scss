@@ -1,0 +1,20 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+  
+ul {
+    list-style: none;
+}
+
+@import 'header.scss';
+@import 'modal.scss';
+@import 'masthead.scss';
+@import 'graduados.scss';
+@import 'contacto.scss';
+@import 'inscripcion.scss';
+@import 'carrera.scss';
+@import 'footer.scss';
