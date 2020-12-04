@@ -1,0 +1,352 @@
+// SECCION CURSOS
+.curso-img-contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+    button {
+        color: white;
+        background-color: #9966ff;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 20px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    h3 {
+        font-weight: lighter;
+        margin-bottom: 0;
+    }
+}
+
+// PREGUNTAS FRECUENTES
+.preguntas-title {
+    width: 100%;
+    text-align: center;
+    h3 {
+        font-weight: lighter;
+        color: #99cc99;
+    }
+}
+
+.preguntas-frecuentes {
+    max-width: 850px;
+    margin: 30px auto;
+    .preguntas-item-contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #cccccc;
+        padding: 0 20px;
+        border-bottom: 1px solid white;
+        transition: background-color 1s;
+        p {
+            font-weight: lighter;
+            margin: 10px 0;
+            padding: 5px 0;
+        }
+        i {
+            background-color: white;
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+    .preguntas-item-show {
+        background-color: #99cc99;
+        p {
+            color: white;
+        }
+        i {
+            color: #99cc99;
+        }
+    }
+    .preguntas-texto {
+        overflow: hidden;
+        .preguntas-texto-contenido {
+            display: none;
+            animation: movi 1s;
+            padding: 0 20px;
+            background-color: white;
+            p {
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 15px 0;
+                font-weight: lighter;
+                text-align: justify;
+                line-height: 1.5rem;
+                letter-spacing: 0.05rem;
+                font-size: 0.8rem;
+            }
+            h3 {
+                color: #99cc99;
+                margin-bottom: 0;
+            }
+            .boton-cerrar-drop {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                p {
+                    cursor: pointer;
+                    padding: 10px 20px;
+                    background-color: #99cc99;
+                    color: white;
+                    margin-bottom: 20px;
+                }
+            }
+            .img-contenedor-contenido {
+                display: flex;
+                align-items: center;
+                p {
+                    padding-left: 10px;
+                }
+                .img-contenedor-texto {
+                    p, h3 {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+        .menu-dolor-show {
+            overflow: hidden;
+            display: block;
+        }
+        @keyframes movi {
+            0% {
+                transform: translateY(-101%);
+            }
+        }
+    }
+}
+
+// CURSO
+.contenedor-col-curso {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    background-color: rgb(247, 247, 234);
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    .curso-nav {
+        a {
+            h4 {
+                text-transform: uppercase;
+                color: black;
+                opacity: 0.5;
+                padding-left: 30px;
+            }
+            .curso-activo {
+                background-color: #9966ff;
+                color: white;
+                padding: 8px 0 8px 30px;
+            }
+        }
+    }
+    .curso-central {
+        display: flex;
+        align-items: flex-end;
+        img {
+            width: 100%;
+        }
+    }
+    .curso-carrito {
+        display: flex;
+        align-items: flex-end;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        i {
+            color: white;
+            background-color: #9966ff;
+            padding: 15px;
+            font-size: 1.5rem;
+            border-radius: 50%;
+        }
+    }
+    .banda-central {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        p {
+            margin: 0;
+            padding: 10px 50px;
+            background-color: #999999;
+            color: white;
+        }
+    }
+    .curso-col-text {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            width: 70%;
+            text-transform: uppercase;
+            font-weight: 100;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    .curso-programa {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        .curso-programa-boton {
+            background-color: #cccccc;
+            width: 100%;
+            padding: 30px 0;
+            h4 {
+                text-align: center;
+                text-transform: uppercase;
+                margin: 0;
+                cursor: pointer;
+            }
+            h1 {
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+        .curso-programa-datos {
+            padding: 15px;
+        }
+        .boton-alto {
+            padding: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                margin: 0;
+                padding: 10px;
+            }
+        }
+    }
+    .curso-programa-drop {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            text-transform: uppercase;
+            color: #9966ff;
+        }
+        .drop-contenido {
+            display: none;
+            animation: dropdown 1s;
+            .drop-item {
+                ul {
+                    // list-style-type: decimal;
+                    counter-reset: number;
+                    list-style-type: none;
+                    padding-left: 15px;
+                }
+                li {
+                    display: flex;
+                    margin-top: 15px;
+                    p {
+                        margin: 0;
+                        padding-left: 10px;
+                    }
+                }
+                li::before {
+                    counter-increment: number;
+                    content: counter(number)"-";
+                }
+                p {
+                    font-weight: 100;
+                    padding-left: 15px;
+                }
+            }
+        }
+        .menu-contenedor-show {
+            overflow: hidden;
+            display: block;
+        }
+        @keyframes dropdown {
+            0% {
+                transform: translateY(-101%);
+            }
+        }
+    }
+}
+
+/* Medias querys responsive */
+@media screen and (max-width:850px) {
+    .contenedor-col-curso {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        .curso-carrito {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            z-index: 10;
+            position: relative;
+            i {
+                position: absolute;
+                right: 0;
+                bottom: -30px;
+            }
+        }
+        .banda-central {
+            grid-column: 1 / 3;
+        }
+        .curso-programa {
+            grid-column: 1 / 2;
+        }
+        .curso-programa-drop {
+            grid-column: 2 / 3;
+        }
+        .curso-col-text {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    .contenedor-col-curso {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto);
+        width: 100%;
+        .curso-central {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+        .curso-nav {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+        .curso-carrito {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            z-index: 10;
+            position: relative;
+            i {
+                position: absolute;
+                right: 0;
+                bottom: -30px;
+            }
+        }
+        .banda-central {
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+        }
+        .curso-programa {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+        .curso-programa-drop {
+            grid-column: 1 / 2;
+            grid-row: 5 / 6;
+        }
+        .curso-col-text {
+            grid-column: 1 / 2;
+            grid-row: 6 / 7;
+        }
+    }
+}
