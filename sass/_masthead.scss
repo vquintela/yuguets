@@ -4,6 +4,13 @@
     display: flex;
 }
 
+.imagen {
+    background-image: url('../img/portada.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .col-1 {
     width: 70%;
     display: flex;
@@ -61,8 +68,9 @@
 }
 
 .casa {
+    clip-path: polygon(50% 0%, 100% 7%, 100% 100%, 0 100%, 0 7%);
     background-color: white;
-    width: 70%;
+    width: 260px;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -139,7 +147,7 @@
         max-width: 60%;
     }
     .casa {
-        width: 100%;
+        clip-path: polygon(50% 0%, 100% 9%, 100% 100%, 0 100%, 0 9%);
     }
     .icon-wtsp img {
         margin-right: 10px;
@@ -159,7 +167,7 @@
         max-width: 90%;
     }
     .col-2 {
-        width: 70%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
