@@ -48,40 +48,40 @@
 .nav-icon {
     display: flex;
     color: #9966ff;
-}
-
-.icon-item a,
-.icon-redes a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    padding: 5px;
-    margin-left: 10px;
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
+    .icon-item {
+        background-color: white;
+        padding: 5px;
+        margin-left: 10px;
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+    }
+    
 }
 
-.icon-item a {
-    color: #9966ff;
-}
 
 .nav-link-sup {
     display: flex;
     margin-left: auto;
     padding-right: 20px;
+    a {
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        padding: 5px 20px;
+        font-weight: lighter;
+        margin: 10px 0;
+    }
+    .active-link-ong {
+        color: black;
+    }
 }
 
-.nav-link-sup p {
-    display: inline-block;
-    text-transform: uppercase;
-    color: white;
-    padding: 5px 20px;
-    font-weight: lighter;
-}
-
-.nav-link-sup p:first-child {
+.nav-link-sup a:first-child {
     border-right: 1px solid white;
 }
 
@@ -154,13 +154,17 @@
         margin-left: 30px;
     }
     .nav-navbar {
-        width: 80%;
+        width: 280px;
         z-index: 10;
         transform: translateX(-110%);
         transition: transform 0.5s ease-in-out;
     }
     .show {
         transform: translateX(0);
+    }
+    .nav-link-sup {
+        padding-right: 0;
+        font-size: 0.7rem;
     }
     .nav-link-sup p {
         font-size: 0.6rem;

@@ -142,3 +142,22 @@ window.onload = () => {
     const aref = document.getElementById('btn-ws')
     check ? aref.setAttribute('href', "https://api.whatsapp.com/send?phone=") : aref.setAttribute('href', "https://web.whatsapp.com/send?phone=")
 };
+
+// BOTON REDES Y COMPARTIR
+document.querySelector('.compartir-redes').addEventListener('click', () => mostrarModalRedes());
+document.querySelector('.form-contacto').addEventListener('click', () => mostrarModalContacto());
+
+const mostrarModalRedes = () => {
+    const modal = document.getElementById('modal-redes')
+    const barra = document.querySelector('body');
+    modal.style.display = 'block';
+    barra.style.overflowY = 'hidden';
+    document.getElementById('cerrarModal').addEventListener('click', () => {
+        modal.style.display = 'none';
+        barra.style.overflowY = 'visible';
+    });
+}
+
+const mostrarModalContacto = () => {
+    location.href = '/contacto.html';
+}
