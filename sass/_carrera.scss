@@ -272,8 +272,11 @@
     justify-content: center;
     margin-top: 50px;
     .col-testimonios {
+        display: flex;
+        justify-content: center;
         video {
             max-width: 100%;
+            height: 200px;
         }
     }
 }
@@ -282,10 +285,12 @@
     .carrera-testimonios-body {
         grid-template-columns: repeat(1, 350px);
         gap: 20px;
+        .col-testimonios {
+            video {
+                height: auto;
+            }
+        }
     }
-}
-
-@media screen and (max-width:750px) {
     /* carrera */
     .col-carrera-1{
         width: 100%;
@@ -345,7 +350,7 @@
     .plan-estudio {
         padding: 0;
         .plan-titulo {
-            padding: 0 10px;
+            padding: 0;
             .titulo-icono {
                 margin-left: 5px;
                 img {
