@@ -1413,6 +1413,49 @@ ul {
   margin: 0;
 }
 
+.carrera-testimonios-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #999999;
+}
+
+.carrera-testimonios-title h3 {
+  text-transform: uppercase;
+}
+
+.carrera-testimonios-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (350px)[2];
+      grid-template-columns: repeat(2, 350px);
+  gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.carrera-testimonios-body .col-testimonios video {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .carrera-testimonios-body {
+    -ms-grid-columns: (350px)[1];
+        grid-template-columns: repeat(1, 350px);
+    gap: 20px;
+  }
+}
+
 @media screen and (max-width: 750px) {
   /* carrera */
   .col-carrera-1 {
@@ -1502,6 +1545,13 @@ ul {
     padding: 0 10px;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .carrera-testimonios-body {
+    -ms-grid-columns: (90%)[1];
+        grid-template-columns: repeat(1, 90%);
   }
 }
 

@@ -252,7 +252,38 @@
     margin: 0;
 }
 
+// TESTIMONIOS
+.carrera-testimonios-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #999999;
+    h3 {
+        text-transform: uppercase;
+    }
+}
 
+.carrera-testimonios-body {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+    .col-testimonios {
+        video {
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+    .carrera-testimonios-body {
+        grid-template-columns: repeat(1, 350px);
+        gap: 20px;
+    }
+}
 
 @media screen and (max-width:750px) {
     /* carrera */
@@ -341,5 +372,11 @@
             padding: 0 10px;
             grid-template-columns: repeat(1, 1fr);
         }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .carrera-testimonios-body {
+        grid-template-columns: repeat(1, 90%);
     }
 }
