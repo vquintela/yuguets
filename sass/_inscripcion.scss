@@ -3,32 +3,33 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-}
-
-.form-1, .form-2 {
-    width: 40%;
-    margin-bottom: 20px;
-}
-
-.input-title h4 {
-    margin: 0;
-    margin-top: 10px;
-}
-
-.input-title p {
-    margin: 0;
-    padding-left: 0;
-}
-
-.input-check {
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
-}
-
-.input-check h5 {
-    margin: 0;
-    margin-left: 5px;
+    .form-1, .form-2 {
+        width: 40%;
+        margin-bottom: 20px;
+        form {
+            text-align: left;
+            width: 100%;
+            .input-title {
+                h4 {
+                    margin: 0;
+                    margin-top: 10px;
+                }
+                p {
+                    margin: 0;
+                    padding-left: 0;
+                }
+            }
+            .input-check {
+                display: flex;
+                align-items: center;
+                margin: 15px 0;
+                h5 {
+                    margin: 0;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:650px) {
@@ -41,8 +42,8 @@
     .formulario-inscripcion {
         flex-direction: column;
         align-items: center;
-    }
-    .form-1, .form-2 {
-        width: 80%;
+        .form-1, .form-2 {
+            width: 90%;
+        }
     }
 }

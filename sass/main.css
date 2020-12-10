@@ -977,7 +977,8 @@ ul {
   color: red;
 }
 
-.formulario {
+.formulario,
+.formulario-inscripcion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -987,12 +988,14 @@ ul {
   padding-bottom: 30px;
 }
 
-.formulario form {
+.formulario form,
+.formulario-inscripcion form {
   width: 50%;
   text-align: right;
 }
 
-.formulario form .form-title {
+.formulario form .form-title,
+.formulario-inscripcion form .form-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1005,11 +1008,13 @@ ul {
   color: white;
 }
 
-.formulario form .form-title h4 {
+.formulario form .form-title h4,
+.formulario-inscripcion form .form-title h4 {
   margin-left: 15px;
 }
 
-.formulario form .input-area {
+.formulario form .input-area,
+.formulario-inscripcion form .input-area {
   width: 100%;
   height: 80px;
   display: -webkit-box;
@@ -1024,21 +1029,24 @@ ul {
           justify-content: center;
 }
 
-.formulario form .input-area input[type="checkbox"] {
+.formulario form .input-area input[type="checkbox"],
+.formulario-inscripcion form .input-area input[type="checkbox"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
 
-.formulario form .input-area input {
+.formulario form .input-area input,
+.formulario-inscripcion form .input-area input {
   width: 100%;
   border: none;
   border-bottom: 1px solid black;
   background-color: transparent;
 }
 
-.formulario form .input-area input:focus {
+.formulario form .input-area input:focus,
+.formulario-inscripcion form .input-area input:focus {
   outline: none;
 }
 
@@ -1060,22 +1068,27 @@ ul {
   width: 100%;
 }
 
-.form-1, .form-2 {
+.formulario-inscripcion .form-1, .formulario-inscripcion .form-2 {
   width: 40%;
   margin-bottom: 20px;
 }
 
-.input-title h4 {
+.formulario-inscripcion .form-1 form, .formulario-inscripcion .form-2 form {
+  text-align: left;
+  width: 100%;
+}
+
+.formulario-inscripcion .form-1 form .input-title h4, .formulario-inscripcion .form-2 form .input-title h4 {
   margin: 0;
   margin-top: 10px;
 }
 
-.input-title p {
+.formulario-inscripcion .form-1 form .input-title p, .formulario-inscripcion .form-2 form .input-title p {
   margin: 0;
   padding-left: 0;
 }
 
-.input-check {
+.formulario-inscripcion .form-1 form .input-check, .formulario-inscripcion .form-2 form .input-check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1085,7 +1098,7 @@ ul {
   margin: 15px 0;
 }
 
-.input-check h5 {
+.formulario-inscripcion .form-1 form .input-check h5, .formulario-inscripcion .form-2 form .input-check h5 {
   margin: 0;
   margin-left: 5px;
 }
@@ -1106,8 +1119,8 @@ ul {
         -ms-flex-align: center;
             align-items: center;
   }
-  .form-1, .form-2 {
-    width: 80%;
+  .formulario-inscripcion .form-1, .formulario-inscripcion .form-2 {
+    width: 90%;
   }
 }
 
