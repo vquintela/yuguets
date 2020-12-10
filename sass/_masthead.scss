@@ -55,18 +55,6 @@
     cursor: pointer;
 }
 
-.icon-wtsp {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-
-.icon-wtsp img {
-    margin-right: 90px;
-    width: 70px;
-}
-
 .casa {
     clip-path: polygon(50% 0%, 100% 7%, 100% 100%, 0 100%, 0 7%);
     background-color: white;
@@ -148,9 +136,6 @@
     }
     .casa {
         clip-path: polygon(50% 0%, 100% 9%, 100% 100%, 0 100%, 0 9%);
-    }
-    .icon-wtsp img {
-        margin-right: 10px;
     }
 }
 

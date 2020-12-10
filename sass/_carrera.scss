@@ -1,4 +1,8 @@
 /* SECCION CARRERA */
+.masthead-carrera {
+    display: flex;
+    background-color: rgb(247, 247, 234);
+}
 .col-carrera-1,
 .col-carrera-2 {
     width: 50%;
@@ -21,7 +25,6 @@
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 50px;
     background-color: #9966ff;
     color: white;
 }
@@ -282,6 +285,10 @@
 }
 
 @media screen and (max-width:750px) {
+    .masthead-carrera {
+        flex-direction: column;
+        align-items: center;
+    }
     .carrera-testimonios-body {
         grid-template-columns: repeat(1, 350px);
         gap: 20px;

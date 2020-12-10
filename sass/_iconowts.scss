@@ -1,0 +1,32 @@
+.icon-wtsp {
+    position: fixed;
+    z-index: 150;
+    right: 20px;
+    bottom: 30px;
+    border: 2px solid  #9966ff;;
+    background-color:  #9966ff;;
+    color: white;
+    transition: color 1s;
+    border-radius: 50px;
+    cursor: pointer;
+    .icon-wtsp-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        img {
+            width: 60px;
+            position: absolute;
+            left: -25px;
+        }
+        p {
+            margin: 0;
+            padding: 10px 20px 10px 30px;
+        }
+    }
+}
+
+.icon-wtsp:hover {
+    background-color:  #9966ff90;;
+    color: black;
+}
