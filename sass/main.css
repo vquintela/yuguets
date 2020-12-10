@@ -2533,7 +2533,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
+  width: 85%;
   background-color: #6633ff;
   height: 150px;
   margin: 0 auto;
@@ -2555,7 +2555,7 @@ ul {
   background-size: contain;
   position: absolute;
   bottom: 0px;
-  right: -75px;
+  right: -70px;
   width: 150px;
   height: 150px;
 }
@@ -2580,7 +2580,7 @@ ul {
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
   gap: 30px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -2617,7 +2617,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
