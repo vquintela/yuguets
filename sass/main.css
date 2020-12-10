@@ -2470,13 +2470,14 @@ ul {
 
 .contenedor-asociacion .asociacion-title::after {
   content: '';
-  background-image: url("../img/MARCAYUGUETSnavegador.png");
+  background-image: url("../img/logoONG.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   bottom: -80px;
   left: 50px;
-  width: 250px;
-  height: 120px;
+  width: 200px;
+  height: 105px;
 }
 
 .contenedor-asociacion .asociacion-col {
@@ -2787,8 +2788,14 @@ ul {
     width: 100%;
   }
   .contenedor-asociacion .asociacion-title::after {
-    left: 10px;
-    bottom: -110px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -100px;
+  }
+  .contenedor-asociacion .asociacion-title h3 {
+    text-align: center;
+    font-size: 1.8rem;
   }
   .contenedor-asociacion .asociacion-col {
     -ms-grid-columns: (1fr)[1];
@@ -2803,16 +2810,21 @@ ul {
   .contenedor-asociacion .asociacion-col .asociacion-col-contenido .contenido-title {
     width: 100%;
   }
+  .contenedor-asociacion .asociacion-col .asociacion-col-contenido .contenido-title h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
   .programa-title,
   .puertas-title {
+    max-width: none;
     width: 100%;
     margin: 0;
     height: 100px;
   }
   .programa-title h3,
   .puertas-title h3 {
-    width: 60%;
-    font-size: 0.8rem;
+    text-align: center;
+    font-size: 1.2rem;
     margin: 0 5px;
   }
   .programa-title::before,
@@ -2821,8 +2833,10 @@ ul {
   }
   .programa-title::after,
   .puertas-title::after {
-    bottom: 0px;
-    right: -50px;
+    bottom: -80px;
+    right: 0px;
+    left: 0;
+    margin: 0 auto;
     width: 100px;
     height: 100px;
   }
@@ -2846,6 +2860,10 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 100px;
+  }
+  .programa-col {
+    margin-top: 90px;
   }
   .prensa-body {
     -webkit-box-orient: vertical;
