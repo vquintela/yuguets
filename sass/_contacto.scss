@@ -6,55 +6,48 @@
 .formulario {
     display: flex;
     justify-content: center;
-}
-
-.formulario form {
-    width: 50%;
-}
-
-.form-title {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    background-color: #9966ff;
-    color: white;
-}
-
-.form-title h4 {
-    margin-left: 15px;
-}
-
-.input-area {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.input-area input[type="checkbox"] {
-    flex-direction: row;
-}
-
-.input-area input {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid black;
-    background-color: transparent;
-}
-
-.input-area input:focus {
-    outline: none;
-}
-
-.formulario form button,
-.form-2 form button {
-    float: right;
+    padding-bottom: 30px;
+    form {
+        width: 50%;
+        text-align: right;
+        .form-title {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            background-color: #9966ff;
+            color: white;
+            h4 {
+                margin-left: 15px;
+            }
+        }
+        .input-area {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            input[type="checkbox"] {
+                flex-direction: row;
+            }
+            input {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid black;
+                background-color: transparent;
+            }
+            input:focus {
+                outline: none;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:750px) {   
-    .formulario form {
-        width: 90%;
+    .formulario {
+        form {
+            text-align: center;
+            width: 90%;
+        }
     }
 }
