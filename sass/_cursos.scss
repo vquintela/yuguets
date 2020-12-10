@@ -283,6 +283,39 @@
     }
 }
 
+.becas-contenedor {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 180px;
+    background-color: #cccccc;
+    img {
+        position: absolute;
+        right: 15px;
+        width: 150px;
+    }
+    h3 {
+        margin: auto;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+}
+
+.becas-texto {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 0 15px;
+    p {
+        font-weight: lighter;
+        text-align: justify;
+        line-height: 1.5rem;
+        letter-spacing: 0.05rem;
+        font-size: 1rem;
+        opacity: 0.6;
+    }
+}
+
 /* Medias querys responsive */
 @media screen and (max-width:850px) {
     .contenedor-col-curso {
@@ -355,5 +388,16 @@
             grid-column: 1 / 2;
             grid-row: 6 / 7;
         }
+    }
+    .becas-contenedor {
+        img {
+            bottom: -60%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+    }
+    .becas-texto {
+        margin-top: 130px;
     }
 }
