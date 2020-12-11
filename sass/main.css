@@ -10,6 +10,16 @@ ul {
   list-style: none;
 }
 
+body {
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    margin-top: 80px;
+  }
+}
+
 /* Navbar */
 .nav {
   position: fixed;
