@@ -15,7 +15,7 @@
         }
         &::after {
             content: '';
-            background-image: url('../img/logoONG.jpg');
+            background-image: url('../img/logoONG.png');
             background-size: contain;
             background-repeat: no-repeat;
             position: absolute;
@@ -139,6 +139,9 @@
         padding: 10px;
         p {
             font-weight: 300;
+        }
+        iframe {
+            width: 100%;
         }
     }
 }

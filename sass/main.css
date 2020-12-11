@@ -798,6 +798,10 @@ ul {
   grid-row: 1 / 3;
 }
 
+.col-graduados-3 iframe {
+  max-width: 100%;
+}
+
 .col-head {
   width: 100%;
 }
@@ -853,6 +857,11 @@ ul {
 
 .col-content {
   width: 100%;
+}
+
+.col-content video {
+  max-width: 100%;
+  margin-top: 20px;
 }
 
 .col-content img {
@@ -1153,6 +1162,10 @@ ul {
           flex-direction: column;
   margin: auto;
   padding-bottom: 50px;
+}
+
+.charla iframe {
+  margin-top: 30px;
 }
 
 .titulo-charla {
@@ -1556,6 +1569,11 @@ ul {
 @media screen and (max-width: 650px) {
   .charla {
     width: 100%;
+  }
+  .charla iframe {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .charla .texto-charla {
     padding: 5px;
@@ -2399,8 +2417,8 @@ ul {
 }
 
 .contenido-ong .ong-body p {
-  width: 40%;
-  margin-right: 15px;
+  width: 48%;
+  margin: 50px 15px;
   opacity: 0.6;
   text-align: justify;
   line-height: 1.5rem;
@@ -2470,7 +2488,7 @@ ul {
 
 .contenedor-asociacion .asociacion-title::after {
   content: '';
-  background-image: url("../img/logoONG.jpg");
+  background-image: url("../img/logoONG.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -2636,6 +2654,10 @@ ul {
 
 .puertas-body .puertas-col-2 p {
   font-weight: 300;
+}
+
+.puertas-body .puertas-col-2 iframe {
+  width: 100%;
 }
 
 .prensa-title {
