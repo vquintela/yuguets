@@ -1,7 +1,9 @@
+// BOTON NAVBAR RESPONSIVE
 document.getElementById("btn-menu").addEventListener("click", () => {
     document.getElementById("nav-navbar").classList.toggle("show");
 });
 
+// BOTON CONTACTO
 const btnContacto = document.getElementById('btn-contacto');
 if (btnContacto) {
     btnContacto.addEventListener('click', e => {
@@ -16,6 +18,7 @@ if (btnContacto) {
     })
 }
 
+// EMAIL DE CONTACTO
 const mailContacto = () => {
     const formData = new FormData();
     const nombre = document.getElementById('nombre').value;
@@ -29,7 +32,7 @@ const mailContacto = () => {
             document.getElementById('errorNombre').innerText = "¡Campo obligatorio!";
         } else {
             document.getElementById('errorNombre').innerText = "";
-            if (nombre.length > 15) {
+            if (nombre.length > 50) {
                 document.getElementById('errorNombre').innerText = "¡El nombre es demasiado largo!";
             }
         }
@@ -59,7 +62,7 @@ const mailContacto = () => {
             document.getElementById('errorComentario').innerText = "";
         }
     } else if (nombre.length > 15 || !expresion.test(mail) || telefono.length > 10 || isNaN(telefono)) {
-        if (nombre.length > 15) {
+        if (nombre.length > 50) {
             document.getElementById('errorNombre').innerText = "¡El nombre es demasiado largo!";
         } else {
             document.getElementById('errorNombre').innerText = "";
@@ -80,7 +83,7 @@ const mailContacto = () => {
         }
     } else {
         formData.append('nombre', nombre)
-        formData.append('mail', mail)
+        formData.append('email', mail)
         formData.append('telefono', telefono)
         formData.append('comentario', comentario)
         fetch("php/email.php", {
@@ -97,6 +100,7 @@ const mailContacto = () => {
     }
 }
 
+// EMAIL INSCRIPCION
 const mailInscripcion = e => {
     const carrera =[];
     const titulo = [];
@@ -117,6 +121,29 @@ const mailInscripcion = e => {
     const nacionalidad = document.getElementById('nacionalidad').value;
     const comentario = document.getElementById('comentario').value;
     const tituloComent = document.getElementById('tituloComent').value;
+    if (nombre === "" || email === "" || telefono === "") return alert('Debe completar el nombre, el email y el telefono');
+    if (carrera.length === 0 | titulo.length === 0) return alert('Debe completar al menos una carrera y un titulo');
+    const formData = new FormData();
+    formData.append('nombre', nombre)
+    formData.append('email', email)
+    formData.append('telefono', telefono)
+    formData.append('comentario', comentario)
+    formData.append('fecha', fecha)
+    formData.append('nacionalidad', nacionalidad)
+    formData.append('tituloComent', tituloComent)
+    formData.append('carrera', carrera)
+    formData.append('titulo', titulo)
+    fetch("php/inscripcion.php", {
+        method: 'POST', 
+        body: formData
+    })
+    .then(function (response) {
+        return response.text();
+    })
+    modalEd();
+    document.querySelector("#aceptarEditarButton").addEventListener('click', function () {
+        location.reload();
+    });
 }
 
 const modalEd = () => {

@@ -16,13 +16,13 @@ $telefono = $_POST["telefono"];
 $mensaje = $_POST["comentario"];
 
 
-$destinatario = "hidroflores@hotmail.com";
+$destinatario = "victorquintela10@gmail.com";
 
 
 // Datos de la cuenta de correo utilizada para enviar v�a SMTP
-$smtpHost = "mail.hidroflores.com";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "infohidroflores@hidroflores.com";  // Mi cuenta de correo
-$smtpClave = "Hidroflores2019";  // Mi contrase�a
+$smtpHost = "mail.dantevaweb.com";  // Dominio alternativo brindado en el email de alta 
+$smtpUsuario = "eycommerce@dantevaweb.com";  // Mi cuenta de correo
+$smtpClave = "RE=No,5o*&5-";  // Mi contrase�a
 
 
 
@@ -40,8 +40,8 @@ $mail->Username = $smtpUsuario;
 $mail->Password = $smtpClave;
 
 
-$mail->From = 'infohidroflores@hidroflores.com'; // Email desde donde env�o el correo.
-$mail->FromName = 'hidroflores';
+$mail->From = 'eycommerce@dantevaweb.com'; // Email desde donde env�o el correo.
+$mail->FromName = 'Instituto Yuguets';
 $mail->AddAddress($destinatario); // Esta es la direcci�n a donde enviamos los datos del formulario
 $mail->AddAddress($email);
 
@@ -65,8 +65,8 @@ $mail->Body = "
 <p>mensaje: {$mensaje}</p>
 
 <p>Recuerde que este es un mensaje generado en forma automatica, no lo responda.<br>
-    En caso de querer enviarnos otro mail hagalo a <b><i>hidroflores@hotmail.com</b></i><br>
-    Muchas Gracias!<br>HidroFlores.</p>
+    En caso de querer enviarnos otro mail hagalo a <b><i>Email contacto yuguets</b></i><br>
+    Muchas Gracias!<br>Instituto Yuguets.</p>
 
 </body> 
 
