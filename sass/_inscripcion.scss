@@ -32,6 +32,29 @@
     }
 }
 
+.col-inscripcion {
+    .aclaracion {
+        width: 80%;
+        margin: 10px auto;
+        padding: 15px 0;
+        font-weight: lighter;
+        text-align: justify;
+        line-height: 1.5rem;
+        letter-spacing: 0.05rem;
+        font-size: 0.8rem;
+    }
+    a {
+        margin: auto;
+        margin-top: 30px;
+        color: white;
+        background-color: red;
+        padding: 7px 45px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
 @media screen and (max-width:650px) {
     .col {
         margin-bottom: 50px;
