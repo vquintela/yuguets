@@ -16,7 +16,7 @@ $telefono = $_POST["telefono"];
 $mensaje = $_POST["comentario"];
 
 
-$destinatario = "victorquintela10@gmail.com";
+$destinatario = "yuguets@gmail.com";
 
 
 // Datos de la cuenta de correo utilizada para enviar v�a SMTP

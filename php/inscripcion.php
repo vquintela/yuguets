@@ -13,7 +13,7 @@ $carrera = $_POST["carrera"];
 $titulo = $_POST["titulo"];
 
 
-$destinatario = "victorquintela10@gmail.com";
+$destinatario = "yuguets@gmail.com";
 
 // Datos de la cuenta de correo utilizada para enviar v�a SMTP
 $smtpHost = "mail.dantevaweb.com";  // Dominio alternativo brindado en el email de alta 
