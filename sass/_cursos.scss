@@ -128,9 +128,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     background-color: rgb(247, 247, 234);
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    padding: 0 5%;
+    padding-bottom: 50px;
     .curso-nav {
         a {
             h4 {
@@ -200,7 +199,8 @@
             width: 100%;
             padding: 30px 0;
             h4 {
-                text-align: center;
+                text-align: right;
+                padding-right: 50px;
                 text-transform: uppercase;
                 margin: 0;
                 cursor: pointer;
@@ -321,6 +321,8 @@
     .contenedor-col-curso {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
+        padding: 0;
+        padding-bottom: 30px;
         .curso-carrito {
             grid-column: 2 / 3;
             grid-row: 2 / 3;

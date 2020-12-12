@@ -593,7 +593,7 @@ body {
 }
 
 .col-1 p {
-  padding-left: 20px;
+  padding-left: 100px;
   opacity: 0.4;
 }
 
@@ -731,6 +731,10 @@ body {
   }
   .col-1 {
     width: 100%;
+    text-align: center;
+  }
+  .col-1 p {
+    padding: 0;
   }
   .col-1 img {
     margin-top: 20px;
@@ -1981,9 +1985,8 @@ body {
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
   background-color: #f7f7ea;
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  padding: 0 5%;
+  padding-bottom: 50px;
 }
 
 .contenedor-col-curso .curso-nav a h4 {
@@ -2092,7 +2095,8 @@ body {
 }
 
 .contenedor-col-curso .curso-programa .curso-programa-boton h4 {
-  text-align: center;
+  text-align: right;
+  padding-right: 50px;
   text-transform: uppercase;
   margin: 0;
   cursor: pointer;
@@ -2258,6 +2262,8 @@ body {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     width: 100%;
+    padding: 0;
+    padding-bottom: 30px;
   }
   .contenedor-col-curso .curso-carrito {
     -ms-grid-column: 2;
