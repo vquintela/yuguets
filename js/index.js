@@ -167,7 +167,7 @@ window.onload = () => {
         check = true;
     })(navigator.userAgent || navigator.vendor || window.opera);
     const aref = document.getElementById('btn-ws')
-    check ? aref.setAttribute('href', "https://api.whatsapp.com/send?phone=") : aref.setAttribute('href', "https://web.whatsapp.com/send?phone=")
+    check ? aref.setAttribute('href', "https://api.whatsapp.com/send?phone=549116451-2306") : aref.setAttribute('href', "https://web.whatsapp.com/send?phone=549116451-2306")
 };
 
 // BOTON REDES Y COMPARTIR
