@@ -61,7 +61,7 @@ body {
   content: '';
   width: 50%;
   height: 100%;
-  background-color: #9966ff;
+  background-color: white;
 }
 
 .nav .nav-navbar {
@@ -884,11 +884,13 @@ body {
 
 .col-content p {
   margin: 5px 0;
-  font-style: italic;
 }
 
 .col-content-body p {
-  font-style: normal;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
 }
 
 .btn-youtube {
@@ -1159,11 +1161,6 @@ body {
   width: 50%;
 }
 
-.col-carrera-1 p {
-  margin-left: 30px;
-  opacity: 0.5;
-}
-
 .charla {
   width: 80%;
   display: -webkit-box;
@@ -1199,6 +1196,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.texto-charla p {
+  text-align: justify;
+  font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
 }
 
 .texto-charla img {
@@ -2486,7 +2490,7 @@ body {
 
 .contenedor-asociacion .asociacion-title {
   position: relative;
-  width: 60%;
+  width: 63%;
   text-align: end;
   background-color: #6633ff;
 }
@@ -2508,7 +2512,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   bottom: -80px;
-  left: 50px;
+  left: 13%;
   width: 200px;
   height: 98px;
 }
@@ -2521,7 +2525,7 @@ body {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 90%;
+  width: 85%;
 }
 
 .contenedor-asociacion .asociacion-col .asociacion-col-contenido {
@@ -2531,11 +2535,15 @@ body {
 .contenedor-asociacion .asociacion-col .asociacion-col-contenido h4 {
   text-align: justify;
   font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
 }
 
 .contenedor-asociacion .asociacion-col .asociacion-col-contenido p {
   text-align: justify;
   font-weight: 300;
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
 }
 
 .contenedor-asociacion .asociacion-col .asociacion-col-contenido .contenido-title {

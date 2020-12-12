@@ -3,7 +3,7 @@
     background-color: rgb(247, 247, 234);
     .asociacion-title {
         position: relative;
-        width: 60%;
+        width: 63%;
         text-align: end;
         background-color: rgb(102, 51, 255);
         h3 {
@@ -21,7 +21,7 @@
             background-repeat: no-repeat;
             position: absolute;
             bottom: -80px;
-            left: 50px;
+            left: 13%;
             width: 200px;
             height: 98px;
         }
@@ -32,16 +32,20 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        width: 90%;
+        width: 85%;
         .asociacion-col-contenido {
             padding: 0 10px;
             h4 {
                 text-align: justify;
                 font-weight: 400;
+                line-height: 1.5rem;
+                letter-spacing: 0.03rem;
             }
             p {
                 text-align: justify;
                 font-weight: 300;
+                line-height: 1.5rem;
+                letter-spacing: 0.03rem;
             }
             .contenido-title {
                 background-color: #999999;

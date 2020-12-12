@@ -91,11 +91,14 @@
 
 .col-content p {
     margin: 5px 0;
-    font-style: italic;
+    // font-style: italic;
 }
 
 .col-content-body p {
-    font-style: normal;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 0.03rem;
 }
 
 .btn-youtube {
