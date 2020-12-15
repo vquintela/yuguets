@@ -1589,27 +1589,73 @@ body {
 
 .emprendimientos-contenedor .emprendimientos-body {
   width: 60%;
-  margin: 0 auto;
-  padding: 30px;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .emprendimientos-contenedor .emprendimientos-body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-size: 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
-  margin: 10px 50px;
 }
 
-.emprendimientos-contenedor .emprendimientos-body a i {
-  margin-right: 15px;
-  font-size: 1.5rem;
+.emprendimientos-contenedor .emprendimientos-body a .emprendimientos-contenido {
+  background-color: white;
+  width: 100%;
+  height: 140px;
+  border-left: 8px solid #cc99ff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.emprendimientos-contenedor .emprendimientos-body a .emprendimientos-contenido h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.emprendimientos-contenedor .emprendimientos-body a .emprendimientos-contenido h4 {
+  font-size: 0.8rem;
+  margin: 0;
+  margin-top: 5px;
+  opacity: 0.4;
+}
+
+.emprendimientos-contenedor .emprendimientos-body a .emprendimientos-contenido p {
+  opacity: 0.6;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 1.2rem;
+  letter-spacing: 0.03rem;
+  font-size: 0.8rem;
+  text-transform: none;
+  margin: 0;
 }
 
 @media screen and (max-width: 950px) {
@@ -1736,6 +1782,9 @@ body {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+  .emprendimientos-contenedor {
+    width: 100%;
+  }
   .emprendimientos-contenedor .emprendimientos-titulo {
     width: 100%;
   }
@@ -1748,6 +1797,8 @@ body {
   .emprendimientos-contenedor .emprendimientos-body {
     width: 90%;
     padding: 0;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
   .emprendimientos-contenedor .emprendimientos-body a {
     margin: 10px;
