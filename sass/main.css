@@ -1617,7 +1617,7 @@ body {
 .emprendimientos-contenedor .emprendimientos-body a .emprendimientos-contenido {
   background-color: white;
   width: 100%;
-  height: 140px;
+  height: 130px;
   border-left: 8px solid #cc99ff;
   border-radius: 5px;
   display: -webkit-box;
@@ -1627,10 +1627,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 20px;
+  padding-top: 30px;
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
 }
