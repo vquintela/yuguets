@@ -20,9 +20,9 @@ $destinatario = "yuguets@gmail.com";
 
 
 // Datos de la cuenta de correo utilizada para enviar v�a SMTP
-$smtpHost = "mail.dantevaweb.com";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "eycommerce@dantevaweb.com";  // Mi cuenta de correo
-$smtpClave = "RE=No,5o*&5-";  // Mi contrase�a
+$smtpHost = "mail.institutoyuguets.com.ar";  // Dominio alternativo brindado en el email de alta 
+$smtpUsuario = "contacto@institutoyuguets.com.ar";  // Mi cuenta de correo
+$smtpClave = "!9+8@HVe5246";  // Mi contrase�a
 
 
 
@@ -40,7 +40,7 @@ $mail->Username = $smtpUsuario;
 $mail->Password = $smtpClave;
 
 
-$mail->From = 'eycommerce@dantevaweb.com'; // Email desde donde env�o el correo.
+$mail->From = 'contacto@institutoyuguets.com.ar'; // Email desde donde env�o el correo.
 $mail->FromName = 'Instituto Yuguets';
 $mail->AddAddress($destinatario); // Esta es la direcci�n a donde enviamos los datos del formulario
 $mail->AddAddress($email);
