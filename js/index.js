@@ -11,9 +11,9 @@ if (btnContacto) {
         if (e.target.classList.contains('contacto')) {
             mailContacto()
         }
-        if (e.target.classList.contains('inscripcion')) {
-            mailInscripcion(e)
-        }
+        // if (e.target.classList.contains('inscripcion')) {
+        //     mailInscripcion(e)
+        // }
         // document.getElementById('lamascara').style.display = 'block';
     })
 }
@@ -101,50 +101,50 @@ const mailContacto = () => {
 }
 
 // EMAIL INSCRIPCION
-const mailInscripcion = e => {
-    const carrera =[];
-    const titulo = [];
-    const checks = document.querySelectorAll('input[type="checkbox"]');
-    checks.forEach(e => {
-        if(e.checked) {
-            if (e.classList.contains('carrera')) {
-                carrera.push(e.value);
-            } else {
-                titulo.push(e.value);
-            }
-        }
-    })
-    const nombre = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
-    const telefono = document.getElementById('telefono').value;
-    const fecha = document.getElementById('fecha').value;
-    const nacionalidad = document.getElementById('nacionalidad').value;
-    const comentario = document.getElementById('comentario').value;
-    const tituloComent = document.getElementById('tituloComent').value;
-    if (nombre === "" || email === "" || telefono === "") return alert('Debe completar el nombre, el email y el telefono');
-    if (carrera.length === 0 | titulo.length === 0) return alert('Debe completar al menos una carrera y un titulo');
-    const formData = new FormData();
-    formData.append('nombre', nombre)
-    formData.append('email', email)
-    formData.append('telefono', telefono)
-    formData.append('comentario', comentario)
-    formData.append('fecha', fecha)
-    formData.append('nacionalidad', nacionalidad)
-    formData.append('tituloComent', tituloComent)
-    formData.append('carrera', carrera)
-    formData.append('titulo', titulo)
-    fetch("php/inscripcion.php", {
-        method: 'POST', 
-        body: formData
-    })
-    .then(function (response) {
-        return response.text();
-    })
-    modalEd();
-    document.querySelector("#aceptarEditarButton").addEventListener('click', function () {
-        location.reload();
-    });
-}
+// const mailInscripcion = e => {
+//     const carrera =[];
+//     const titulo = [];
+//     const checks = document.querySelectorAll('input[type="checkbox"]');
+//     checks.forEach(e => {
+//         if(e.checked) {
+//             if (e.classList.contains('carrera')) {
+//                 carrera.push(e.value);
+//             } else {
+//                 titulo.push(e.value);
+//             }
+//         }
+//     })
+//     const nombre = document.getElementById('nombre').value;
+//     const email = document.getElementById('email').value;
+//     const telefono = document.getElementById('telefono').value;
+//     const fecha = document.getElementById('fecha').value;
+//     const nacionalidad = document.getElementById('nacionalidad').value;
+//     const comentario = document.getElementById('comentario').value;
+//     const tituloComent = document.getElementById('tituloComent').value;
+//     if (nombre === "" || email === "" || telefono === "") return alert('Debe completar el nombre, el email y el telefono');
+//     if (carrera.length === 0 | titulo.length === 0) return alert('Debe completar al menos una carrera y un titulo');
+//     const formData = new FormData();
+//     formData.append('nombre', nombre)
+//     formData.append('email', email)
+//     formData.append('telefono', telefono)
+//     formData.append('comentario', comentario)
+//     formData.append('fecha', fecha)
+//     formData.append('nacionalidad', nacionalidad)
+//     formData.append('tituloComent', tituloComent)
+//     formData.append('carrera', carrera)
+//     formData.append('titulo', titulo)
+//     fetch("php/inscripcion.php", {
+//         method: 'POST', 
+//         body: formData
+//     })
+//     .then(function (response) {
+//         return response.text();
+//     })
+//     modalEd();
+//     document.querySelector("#aceptarEditarButton").addEventListener('click', function () {
+//         location.reload();
+//     });
+// }
 
 const modalEd = () => {
     const mascara = document.getElementById('lamascara');

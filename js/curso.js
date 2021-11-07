@@ -15,7 +15,8 @@ btnSub.forEach(element => {
 
 
 // DROPDOWN VER PR0GRAMA
-const btnCursoDrop = document.querySelector('.curso-programa-boton h4');
-if (btnCursoDrop) btnCursoDrop.addEventListener('click', () => {
+document.querySelector('.curso-programa-boton h4')?.addEventListener('click', () => {
+    const prox = document.querySelector('.prox-text');
+    if(prox) prox.style.display = prox.style.display === 'none' ? '' : 'none';
     document.querySelector('.drop-contenido').classList.toggle('menu-contenedor-show');
 });

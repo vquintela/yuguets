@@ -1153,6 +1153,10 @@ body {
   cursor: pointer;
 }
 
+.col-inscripcion-imagen {
+  max-width: 100% !important;
+}
+
 @media screen and (max-width: 650px) {
   .col {
     margin-bottom: 50px;
