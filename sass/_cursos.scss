@@ -32,6 +32,24 @@
     }
 }
 
+.abj-contendor {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    .abj-img {
+        grid-column: 1 / 2;
+        img {
+            max-width: 100%;
+        }
+    }
+    .preg-frecuentes-abj {
+        grid-column: 2 / 4;
+    }
+}
+
 .preguntas-frecuentes {
     max-width: 850px;
     margin: 30px auto;
@@ -235,6 +253,12 @@
         h2 {
             text-transform: uppercase;
             color: #9966ff;
+            p {
+                text-transform: none;
+                margin: 2px;
+                font-size: 1.2rem;
+                text-align: center;
+            }
         }
         .drop-contenido {
             display: none;
@@ -410,6 +434,19 @@
         margin: auto;
         margin-bottom: 80px;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .abj-contendor {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        .abj-img {
+            grid-column: 1 / 2;
+            img {
+                max-width: 100%;
+            }
+        }
+        .preg-frecuentes-abj {
+            grid-column: 1 / 2;
+        }
     }
 }
 
