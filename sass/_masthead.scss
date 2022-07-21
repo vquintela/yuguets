@@ -39,8 +39,13 @@
     text-align: center;
 }
 
-.text-masthead h3 {
-    margin: 10px;
+.text-masthead {
+    h3 {
+        margin: 10px;
+    }
+    p{
+        margin: 0;
+    }
 }
 
 .btn-masthead {

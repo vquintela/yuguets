@@ -612,6 +612,10 @@ body {
   margin: 10px;
 }
 
+.text-masthead p {
+  margin: 0;
+}
+
 .btn-masthead {
   margin: 20px;
   text-align: center;
