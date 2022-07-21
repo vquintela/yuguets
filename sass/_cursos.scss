@@ -22,6 +22,22 @@
     }
 }
 
+.cursos-color-text {
+    p {
+        color: #9966ff;
+        opacity: 1;
+    }
+}
+
+.btn-curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        background-color: #9966ff;
+    }
+}
+
 // PREGUNTAS FRECUENTES
 .preguntas-title {
     width: 100%;
@@ -46,7 +62,7 @@
         }
     }
     .preg-frecuentes-abj {
-        grid-column: 2 / 4;
+        grid-column: 1 / 4;
     }
 }
 
@@ -146,6 +162,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     background-color: rgb(247, 247, 234);
+    margin-top: 50px;
     padding: 0 5%;
     padding-bottom: 50px;
     .curso-nav {
@@ -164,6 +181,8 @@
         }
     }
     .curso-central {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
         display: flex;
         align-items: flex-end;
         img {
@@ -185,13 +204,35 @@
     }
     .banda-central {
         grid-column: 2 / 4;
-        grid-row: 2 / 3;
-        p {
-            margin: 0;
-            padding: 10px 50px;
+        grid-row: 1 / 2;
+        .banda-central-titulo {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            p {
+                margin: 0 20px;
+                color: #999999;
+            }
+        }
+        .banda-central-texto {
+            padding: 10px 20px;
             background-color: #999999;
             color: white;
+            p {
+                margin: 0;
+            }
         }
+        .banda-central-datos {
+            background-color: none;
+            padding: 15px;
+        }
+    }
+    .proximamente {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #9966ff;
     }
     .curso-col-text {
         grid-column: 1 / 2;
@@ -210,15 +251,14 @@
         }
     }
     .curso-programa {
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
         .curso-programa-boton {
-            background-color: #cccccc;
             width: 100%;
-            padding: 30px 0;
+            padding: 5px 0;
             h4 {
-                text-align: right;
-                padding-right: 50px;
+                text-align: left;
+                padding-left: 20px;
                 text-transform: uppercase;
                 margin: 0;
                 cursor: pointer;
@@ -227,9 +267,6 @@
                 text-align: center;
                 text-transform: uppercase;
             }
-        }
-        .curso-programa-datos {
-            padding: 15px;
         }
         .boton-alto {
             padding: 0;
@@ -256,7 +293,7 @@
             p {
                 text-transform: none;
                 margin: 2px;
-                font-size: 1.2rem;
+                font-size: 1.0rem;
                 text-align: center;
             }
         }

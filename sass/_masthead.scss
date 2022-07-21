@@ -5,10 +5,12 @@
 }
 
 .imagen {
-    background-image: url('../img/portada.jpg');
-    background-position: center;
+    background-image: url('../img/logocentral.png');
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: #beb9b1;
+    height: 80vh;
 }
 
 .col-1 {

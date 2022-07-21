@@ -564,10 +564,12 @@ body {
 }
 
 .imagen {
-  background-image: url("../img/portada.jpg");
-  background-position: center;
+  background-image: url("../img/logocentral.png");
+  background-position: left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: #beb9b1;
+  height: 80vh;
 }
 
 .col-1 {
@@ -2001,6 +2003,27 @@ body {
   margin-bottom: 0;
 }
 
+.cursos-color-text p {
+  color: #9966ff;
+  opacity: 1;
+}
+
+.btn-curso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-curso a {
+  background-color: #9966ff;
+}
+
 .preguntas-title {
   width: 100%;
   text-align: center;
@@ -2033,9 +2056,9 @@ body {
 }
 
 .abj-contendor .preg-frecuentes-abj {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
 }
 
 .preguntas-frecuentes {
@@ -2177,6 +2200,7 @@ body {
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
   background-color: #f7f7ea;
+  margin-top: 50px;
   padding: 0 5%;
   padding-bottom: 50px;
 }
@@ -2195,6 +2219,12 @@ body {
 }
 
 .contenedor-col-curso .curso-central {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2230,16 +2260,53 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2 / 4;
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
 }
 
-.contenedor-col-curso .banda-central p {
-  margin: 0;
-  padding: 10px 50px;
+.contenedor-col-curso .banda-central .banda-central-titulo {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.contenedor-col-curso .banda-central .banda-central-titulo p {
+  margin: 0 20px;
+  color: #999999;
+}
+
+.contenedor-col-curso .banda-central .banda-central-texto {
+  padding: 10px 20px;
   background-color: #999999;
   color: white;
+}
+
+.contenedor-col-curso .banda-central .banda-central-texto p {
+  margin: 0;
+}
+
+.contenedor-col-curso .banda-central .banda-central-datos {
+  background-color: none;
+  padding: 15px;
+}
+
+.contenedor-col-curso .proximamente {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9966ff;
 }
 
 .contenedor-col-curso .curso-col-text {
@@ -2272,23 +2339,22 @@ body {
 }
 
 .contenedor-col-curso .curso-programa {
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
   -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 3;
+  grid-column: 3 / 4;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
+  grid-row: 2 / 3;
 }
 
 .contenedor-col-curso .curso-programa .curso-programa-boton {
-  background-color: #cccccc;
   width: 100%;
-  padding: 30px 0;
+  padding: 5px 0;
 }
 
 .contenedor-col-curso .curso-programa .curso-programa-boton h4 {
-  text-align: right;
-  padding-right: 50px;
+  text-align: left;
+  padding-left: 20px;
   text-transform: uppercase;
   margin: 0;
   cursor: pointer;
@@ -2297,10 +2363,6 @@ body {
 .contenedor-col-curso .curso-programa .curso-programa-boton h1 {
   text-align: center;
   text-transform: uppercase;
-}
-
-.contenedor-col-curso .curso-programa .curso-programa-datos {
-  padding: 15px;
 }
 
 .contenedor-col-curso .curso-programa .boton-alto {
@@ -2349,7 +2411,7 @@ body {
 .contenedor-col-curso .curso-programa-drop h2 p {
   text-transform: none;
   margin: 2px;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   text-align: center;
 }
 
