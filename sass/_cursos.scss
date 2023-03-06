@@ -165,6 +165,11 @@
     margin-top: 50px;
     padding: 0 5%;
     padding-bottom: 50px;
+    .btn-curso-contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .curso-nav {
         a {
             h4 {
