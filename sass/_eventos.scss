@@ -1,0 +1,93 @@
+.masthead-eventos {
+    margin: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    padding-bottom: 25px;
+    .eventos-item {
+        img {
+            max-width: 100%;
+        }
+        video {
+            max-width: 100%;
+        }
+        a {
+            font-weight: bold;
+            color: #9966ff;
+            font-family: 'Roboto';
+        }
+    }
+}
+
+.eventos-nuevos {
+    font-family: 'Roboto';
+    .eventos-nuevos-title {
+        font-family: 'Roboto';
+        background-color: #9966ff;
+        display: flex;
+        flex-direction: row;
+        align-items:last baseline;
+        justify-content: space-between;
+        .title-el1 {
+            color: aliceblue;
+            padding: 0 25px;
+        }
+        .title-el2 {
+            width: 40%;
+            color: #9966ff;
+            background-color: #FFCC00;
+            transform: translate(0, -10px);
+            h3 {
+                padding: 0 10px;
+            }
+        }
+    }
+    .eventos-nuevos-body {
+        margin: 0 30px;
+        display: grid;
+        grid-template-columns: 1fr fit-content(35%);
+        gap: 10%;
+        .eventos-nuevos-body-col {
+            .eventos-nuevos-body-col-1 {
+                max-width: 50%;
+                margin: 25px;
+                margin-top: 3rem;
+                p {
+                    margin: 0%;
+                    padding: 15px;
+                }
+            }
+            .eventos-nuevos-body-col-2 {
+                background-color: #9966ff;
+                margin: 25px;
+                p {
+                    color: white;
+                    margin: 0%;
+                    padding: 15px;
+                }
+            }
+            .eventos-nuevos-body-col-3 {
+                img {
+                    max-width: 100%;
+                }
+            }
+            .eventos-nuevos-body-span {
+                p {
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    .masthead-eventos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:650px) {
+    .masthead-eventos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

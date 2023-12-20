@@ -2245,13 +2245,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contenedor-col-curso .curso-central img {
   width: 100%;
+}
+
+.contenedor-col-curso .curso-central p {
+  color: purple;
+  font-weight: bolder;
 }
 
 .contenedor-col-curso .curso-carrito {
@@ -3349,6 +3358,123 @@ body {
     bottom: 30px;
     font-size: 0.6rem;
     padding: 10px 15px;
+  }
+}
+
+.masthead-eventos {
+  margin: 0 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  padding-bottom: 25px;
+}
+
+.masthead-eventos .eventos-item img {
+  max-width: 100%;
+}
+
+.masthead-eventos .eventos-item video {
+  max-width: 100%;
+}
+
+.masthead-eventos .eventos-item a {
+  font-weight: bold;
+  color: #9966ff;
+  font-family: 'Roboto';
+}
+
+.eventos-nuevos {
+  font-family: 'Roboto';
+}
+
+.eventos-nuevos .eventos-nuevos-title {
+  font-family: 'Roboto';
+  background-color: #9966ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: last baseline;
+      -ms-flex-align: last baseline;
+          align-items: last baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.eventos-nuevos .eventos-nuevos-title .title-el1 {
+  color: aliceblue;
+  padding: 0 25px;
+}
+
+.eventos-nuevos .eventos-nuevos-title .title-el2 {
+  width: 40%;
+  color: #9966ff;
+  background-color: #FFCC00;
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+
+.eventos-nuevos .eventos-nuevos-title .title-el2 h3 {
+  padding: 0 10px;
+}
+
+.eventos-nuevos .eventos-nuevos-body {
+  margin: 0 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr fit-content(35%);
+      grid-template-columns: 1fr fit-content(35%);
+  gap: 10%;
+}
+
+.eventos-nuevos .eventos-nuevos-body .eventos-nuevos-body-col .eventos-nuevos-body-col-1 {
+  max-width: 50%;
+  margin: 25px;
+  margin-top: 3rem;
+}
+
+.eventos-nuevos .eventos-nuevos-body .eventos-nuevos-body-col .eventos-nuevos-body-col-1 p {
+  margin: 0%;
+  padding: 15px;
+}
+
+.eventos-nuevos .eventos-nuevos-body .eventos-nuevos-body-col .eventos-nuevos-body-col-2 {
+  background-color: #9966ff;
+  margin: 25px;
+}
+
+.eventos-nuevos .eventos-nuevos-body .eventos-nuevos-body-col .eventos-nuevos-body-col-2 p {
+  color: white;
+  margin: 0%;
+  padding: 15px;
+}
+
+.eventos-nuevos .eventos-nuevos-body .eventos-nuevos-body-col .eventos-nuevos-body-col-3 img {
+  max-width: 100%;
+}
+
+.eventos-nuevos .eventos-nuevos-body .eventos-nuevos-body-col .eventos-nuevos-body-span p {
+  font-weight: 200;
+}
+
+@media screen and (max-width: 950px) {
+  .masthead-eventos {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .masthead-eventos {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */

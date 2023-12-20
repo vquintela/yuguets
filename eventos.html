@@ -22,7 +22,7 @@
     <title>Instituto Yuguets</title>
 </head>
 <body>
-    <!-- BARRA NAVEGACION -->
+    <!-- NAVEGACION -->
     <nav class="nav">
         <div class="menu-btn" id="btn-menu">
             <i class="fas fa-bars fa-2x"></i>
@@ -60,12 +60,12 @@
                     <li class="nav-link">
                         <a href="graduados.html">graduados</a>
                     </li>
-                    <li class="nav-link active">
-                        <a href="contacto.html">contacto</a>
-                        <div class="linea-link"></div>
-                    </li>
                     <li class="nav-link">
+                        <a href="contacto.html">contacto</a>
+                    </li>
+                    <li class="nav-link active">
                         <a href="eventos.html">eventos</a>
+                        <div class="linea-link"></div>
                     </li>
                 </ul>
             </div>
@@ -86,7 +86,7 @@
                 <iframe
                     src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Finstitutoyuguets.com.ar%2F&layout=button&size=small&width=89&height=20&appId"
                     width="89" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture;">
                 </iframe>
             </div>
         </div>
@@ -114,52 +114,21 @@
             </div>
         </div>
     </div>
-    <!-- CONTENIDO PAGINA -->
-    <div class="masthead">
-        <div class="col-1">
-            <div class="formulario">
-                <form action="">
-                    <div class="form-title">
-                        <h4>Formulario de CONTACTO</h4>
-                    </div>
-                    <div class="input-area">
-                        <input type="text" id="nombre" class="input-text" placeholder="Nombre y Apellido">
-                        <span id="errorNombre" class="text-danger"></span>
-                    </div>
-                    <div class="input-area">
-                        <input type="text" id="email" class="input-text" placeholder="Email">
-                        <span id="errorEmail" class="text-danger"></span>
-                    </div>
-                    <div class="input-area">
-                        <input type="text" id="telefono" class="input-text" placeholder="Telefono">
-                        <span id="errorTelefono" class="text-danger"></span>
-                    </div>
-                    <div class="input-area">
-                        <input type="text" id="comentario" class="input-text" placeholder="Comentario"/>
-                        <span id="errorComentario" class="text-danger"></span>
-                    </div>
-                    <button class="btn contacto" id="btn-contacto">Enviar</button>
-                </form>
-            </div>
+    <div class="masthead-eventos">
+        <div class="eventos-item">
+            <a href="landing/index.html"><img src="img/evento1.jpg" alt=""></a>
         </div>
-        <div class="col-2">
-            <div class="casa">
-                <div class="triang1"></div>
-                <div class="triang2"></div>
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="texto-casa">
-                    <p>CARRERA TERCIARIA</p>
-                    <h3>Tecnicatura Superior en</h3>
-                    <h1>LUDOTECAS</h1>
-                    <h5>con DISEÑO en JUEGOS y JUGUETES</h5>
-                    <p>Título Oficial</p>
-                    <p>(otorga puntaje docente)</p>
-                </div>
-            </div>
+        <div class="eventos-item">
+            <video controls>
+                <source src="videos/evento2.mp4" type="video/mp4">
+            </video>
+            <a href="evento-nuevo.html">Ver Evento</a>
+        </div>
+        <div class="eventos-item">
+            <a href="#"><img src="img/evento1.jpg" alt=""></a>
         </div>
     </div>
-    <!-- FOOTER -->
+    <!-- FOOTER Y REDES -->
     <div class="redes">
         <h3>Seguinos en las redes</h3>
         <div class="icon-redes">
@@ -203,28 +172,6 @@
     </div>
     <div class="legales">
         <h4>Derechos Reservados Yuguets</h4>
-    </div>
-     <!-- MODAL MENSAJE -->
-     <div id="lamascara" class="mascara">
-        <div class="contenido">
-            <div class="modal-content">
-                <div class="modal-title">
-                    <img src="img/iso.png" alt="logo">
-                    <h3>Consulta Enviada Correctamente</h3>
-                    <span class="cerrar" id="cerrarModal">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <hr>
-                    <p>En breve nos comunicaremos con usted</p>
-                    <p>¡Muchas Gracias!</p>
-                </div>
-                <hr>
-                <div class="modal-footer">
-                    <h3>INSTITUTO YUGUETS</h3>
-                    <button type="button" id="aceptarEditarButton" class="btn-acept">Aceptar</button>
-                </div>
-            </div>
-        </div>
     </div>
     <script src="js/index.js"></script>
 </body>
