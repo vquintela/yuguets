@@ -84,10 +84,25 @@
     .masthead-eventos {
         grid-template-columns: repeat(2, 1fr);
     }
+    .eventos-nuevos {
+        .eventos-nuevos-body {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0;
+        }
+    }
 }
 
 @media screen and (max-width:650px) {
     .masthead-eventos {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .eventos-nuevos {
+        .eventos-nuevos-body {
+            .eventos-nuevos-body-col {
+                .eventos-nuevos-body-col-1 {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }
